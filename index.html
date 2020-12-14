@@ -39,6 +39,10 @@
     --content-color: rgba(0,0,0, .43);
     
 }
+       
+       body{
+           overflow-x: hidden;
+       }
 
 .header{
     height: 100vh;
@@ -606,14 +610,14 @@ h5{
         position: absolute;
         height: 50%;
         width: 60%;
-        left: 42%;
+        left: 32%;
         top: 30%;
     }
     
     .landing-page-image-1 .vlc{
-    position: absolute;
+        position: absolute;
         left: 35%;
-        top: 110vh;
+        top: 20vh;
         height: 20%;
         width: 15%;
     }
@@ -825,15 +829,14 @@ h5{
     
     .landing-page-image-2 img{
         position: absolute;
-        height: 90%;
-        width: 43%;
-        left: 43%;
-/*        background: red;*/
+        height: 80%;
+        width: 55%;
+        left: 38%;
     }
     
     .landing-page-image-1 .vlc{
         position: absolute;
-        top: 23%;
+        top: 50%;
     }
     
     li:hover a{
@@ -859,9 +862,13 @@ h5{
           text-align: center;
     }
     
+    .what-we-do{
+        font-size: .9em;
+    }
+    
     .our-offers{
         margin: 0 auto;
-        width: 85%;
+        width: 100%;
         text-align: center;
 /*        background: RED;*/
     }
@@ -883,6 +890,14 @@ h5{
         min-height: 250vh;
     
     }
+    
+    .wrong{
+        font-size: 1.7em;
+    }
+    
+    .wrong-solution{
+        font-size: .9em;
+    }
 /*    service ends here*/
     
 /*    report issues*/
@@ -891,10 +906,29 @@ h5{
     }
     
     .who-to-call{
-        width: 80%;
+        width: 100%;
     }  
 
 }
+       
+@media only screen and (max-width : 550px){
+           
+    
+    .menu-bg{
+        top: -1em;
+        left: 60%;
+    }
+    
+    ul{
+        left: 65%;
+    }
+    
+    li{
+        width: 85%;
+    }
+    
+    
+       }
     
     
     
