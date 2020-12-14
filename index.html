@@ -3,195 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoMechanic</title>
-        
+    
+    <title>AutoRebrand</title>
+    
+<!--    cascading style sheet-->
+<link rel="stylesheet" href="auto-rebrand.css">
+
+<!--responsive css-->
+<link rel="stylesheet" href="rebrand_responsive.css">
+
 <!--    favicon-->
-   <link rel="icon" href="Images/mech.png">
+   <link rel="icon" href="mech.png">
 
     <!-- gsap core plugin -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
    
    <!--        scroll trigger plugin-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
     
-    
-    
-    <!--    css styling-->
-        <style>
+<!--    header-->
+   <div class="header">
+       
+<!--       navigation bar-->
+      <div class="navigation ">
+         
+<!--         <div class="nav-bar" id="nav">-->
+           
+           <!--      hamburger-->
+          <div id="menubar" onclick="toggleSidebar()">
+             <div id="bar1" class="bar"></div>
+             <div id="bar2" class="bar"></div>
+             <div id="bar3" class="bar"></div>
+          </div>
+          
+          <ul id="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li class="right-float push"><a href="#">Login</a></li>
+              <li class="right-float"><a href="#" >Sign Up</a></li>
+          </ul>
+          
+          <div class="menu-bg" id="menu-bg">
+          </div>
+      </div>
+      
+<!--      header contents-->
+      <div class="landing-page">
+          
+          <div class="landing-page-text">
+<!--            containing the texts -->
+            <div class="text-container">
+                <h1 class="landing-text">
+                   The Auto Mechanic <br>that is a step away...
+            </h1>
+            <p class="our-experience">
+                We have experienced mechanics and know how to fix any  <br>thing that is wrong with your car. We have the equipment <br> to troubleshoot the problem whatever it may be.
+           </p>
+                
+            </div>
+<!--            end of text container-->
+           
+<!--           button container-->
+            <div class="button-container">
+                <button class="quote"><a href="#">Get a Quote</a></button>
+                <button class="learn"><a href="#">Learn More.</a></button>
+<!--               end of button container-->
+                
+            </div>   
             
-            *{
+           
+         
+          </div>
+          <div class="landing-page-image-1">
+              <img class="car" src="realcar.png" alt="">
+              <img class="vlc" src="player-icon.png" alt="">
+          </div>
+          <div class="landing-page-image-2">
+              <img src="mech.png" alt="">
+          </div>
+          
+      </div>
+       
+   </div>
+
+<!--   end of header-->
+  
+  
+<!--  about us section-->
+  <div class="about-us">
+      
+<!--      reason to work with us-->
+     <div class="choose-us">
+         <h1 class="why">Why Choose Us?</h1><p class="what-we-do">Just tell us what maintenance and auto repair services<br> you need and we'll send you a fixed quote. One of our <br> mobile mechanics will come out, do a diagnostic visit <br> and create a quote for you.</p>
+<!--         benefit-->
+        <p class="more-benefit"><a href="#">Learn more about our benefit<img class="svg" src="arrow-right.svg" alt=""></a></p>
+        
+     </div>
+<!--     end of reason to work with us-->
+ 
+<!--our offers-->
+    <div class="our-offers">
+<!--        first offer-->
+   <div class="offers first-offer">
+       <div class="icon icon-1">
+           <img class="planner" src="planner.png" alt="">
+       </div>
+       <div class="icon-text">
+           <h2>No More Waiting Rooms</h2><h5>finally, auto repair that works around your schedule.</h5>
+       </div>
+   </div>
+<!--   second offer-->
+   <div class="offers second-offer">
+       <div class="icon icon-2">
+           <img class="certified" src="id.png" alt="">
+       </div>
+       <div class="icon-text">
+           <h2>Full-Time Certified Mechanics</h2><h5>Professional and trusted mechanics that come to you.</h5>
+       </div>
+   </div>
+<!--   third offer-->
+   <div class="offers third-offer">
+       <div class="icon icon-3">
+           <img class="verified" src="verified.png" alt="">
+       </div>
+       <div class="icon-text">
+           <h2>We Stand By Our Work</h2><h5>Every service has a year/ 12,000 miles warranty.</h5>
+       </div>
+   </div>
+    </div>
+<!--    end of our offers-->
+ 
+  </div>
+<!--  end of about us section-->
+ 
+  
+<!--  services section-->
+  <div class="our-services"> 
+      
+<!--      first service-->
+      <div class="first-service">
+         <div class="garage"></div>
+         <div class="repairs frepairs"><h1 class="wrong">Choose Your Car Repairs, <br> & Tell Us What's Wrong</h1>
+         <p class="wrong-solution">Our mechanics will get your car back on the road <br>in no time. No need to waste time sending <br>them to the repair shop anymore!</p><p class="more-benefits"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>
+      </div>
+<!--      end of first service-->
+     
+<!--     second service-->
+      <div class="second-service">
+          <div class="repairs-1"><h1 class="wrong">Sit Back, Relax, We Come <br>Right To Your Location</h1>
+         <p class="wrong-solution">Select your car. Tell us what's wrong, and we'll give <br>free, instant, price with a complete breakdown of <br>parts and labour.</p>  <p class="more-benefits"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>
+           <div class="problem-fix"></div>
+      </div>
+<!--      end of second service-->
+     
+<!--     third service-->
+      <div class="third-service">
+          <div class="bye-bye"></div>
+         <div class="repairs trepairs"><h1 class="wrong">We Offer Fair & <br>Transparent Pricing</h1>
+         <p class="wrong-solution">We offer fair and transparent pricing and provide <br>estimates upfront for hundred of services on <br>thousand of cars. Book with confidence.</p>  <p class="more-benefits"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>
+      </div>
+<!--      end of third service-->
+      
+  </div>
+  
+  <!--     report issues-->
+     <div class="report-issues">
+         
+         <div class="what-to-report">
+             <p class="aboutengr">
+          Have a problem to report? <br> Or Issues with our Technicians and Mechanics?
+         </div>
+         <div class="who-to-call">
+             <div class="circle"></div>
+        <div class="circle-number">Call <strong>:</strong> <br>General Manager, Auto Mechanic. <br><a style="text-decoration: none; color: #3d2352 ;" href="#">+2349021284572<i class="fas fa-phone-square-alt"></i></a></div>
+         </div>
+             
+     </div>
+     
+<!--     end of report issues-->
+    
+<!--    footer-->
+    <div class="footer">
+       
+        <p class="copyright">Copyright <i  style="font-size: .7em;"class="far fa-copyright"></i>2020. All Right Reserved.
+       </p>
+        
+    </div>
+<!--    end of footer-->
+   
+   
+   
+   <style>
+        *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    background: white;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+:root{
+    --header-color: white;
+    --service-header-color:  #3d2352;
+    --button-color: orangered;
+    --link-color: orangered;
+    --content-color: rgba(0,0,0, .43);
+    
 }
 
 .header{
-    background:linear-gradient(to left bottom, #3d2352, #8874a3 );
-    color: white;
-    border-bottom-left-radius: 65%;
-    height: 41em;
-    width: 100vw;
-    border-bottom-right-radius: 25%;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #3d2352, #8874a3 ); 
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 15%;
+    color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+/*    overflow-x: hidden;*/
+}
+
+.navigation{
+    height: 10%;
+    width: 100%;
+    
 }
 
 ul{
     list-style-type: none;
-    overflow: hidden;
-    margin-top: .3em;
+    width: 100%;
+    height: 30px;
+    margin-top: 1.3em;
+    position: relative;
 }
 
 li{
-    float: left;
-    margin:1em 0 0 3em;
-
-}
-
-li a{   /*    i used li>a at first*/
     text-decoration: none;
-    color: white;
-    font-family: cursive;
+    float: left;
+    margin-top: 1.2em;
+    margin: 0 0 0 2em;
+
 }
 
-li a:checked{
-    color: white;
-}
-
-.right,
-.righty{
-    float: right;
-    margin-right: 8em;
-    border: solid 1.2px red;
-    border-radius: 9px;
-    padding:  5px 32px;
-}
-
-.righty{
-    margin-right: 5mm;
-}
-
-.right{
-    background-color: orangered;
-    margin-left: 0;
-    padding: 5px 50px; 
-}
-
-.mechanic {
-    float: right;
-    height: 20em;
-    width: 29em;
-    margin: 5em 0 0 1em;
+li a{
+    text-decoration: none;
+    color: var(--header-color);
     
 }
 
-.mechengr{
+li a{
+    font-family: cursive;
+
+}
+
+ul li:checked a{
+    color: var(--header-color);
+}
+
+.right-float{
     float: right;
-    margin:6em 1em 0 0;
-    height: 40em;
-    width: 22em;
+    width: 6em;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 9px;
+    padding: 5px 10px;
+}
+
+.push{
+    margin-right: 5%;
+    background: var(--button-color);
+}
+
+.landing-page{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-page-text{
+    height: 100%;
+    width: 45%;
+    font-family: monospace;
+/*    background: #333;*/
 }
 
 h1{
-    margin:2.5em 0 0 5em;
-    font-size: 2.5em;
-    font-family:monospace;
+    font-family: monospace;
+}
+
+.text-container{
+    width: 75%;
+/*    background: blue;*/
+    margin: 10% auto;
+    text-align: left;
+}
+
+.landing-text{
+    font-size: 2.7em;
 }
 
 .our-experience{
-     margin:1em 0 0 13em;
-    font-family:monospace;
+    margin: 1em 0 0 0;
+    font-size: 1.05em;
 }
 
-button>a{
-    text-decoration: none;
-    color: white;
-}
-
-.quote{
-    margin:2em 0 0 12.8em;
-    background-color: orangered;
-    border: orangered;
+.button-container{
+    width: 75%;
+    margin: 2em auto;
+    text-align: left;
+/*    background: red;*/
 }
 
 button{
-    margin-left: 1em;
-    padding: 10px 32px;
-    border-radius: 6px;
+    width: 9em;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 7px;
+    padding: 9px 10px;
+    background: none;
 }
 
-.learn{
-    background-color: inherit;
-    border:solid 1px orangered;
+button a{
+    text-decoration: none;
+    color: var(--header-color);   
 }
 
-.vlc{
-    float: right;
-    height: 7em;
-    margin-top: 13em;
+.quote{
+    background: orangered;
+    margin-right: 1em;
+}
+
+.landing-page-image-1{
+    height: 100%;
+    width: 25%;
+/*    background: #888;*/
+}
+
+.landing-page-image-1 .car{
+    height: 45%;
+    width: 135%;
+    margin-top: 20%;
+    margin-left: -13%;
+}
+
+.landing-page-image-1 .vlc{
+    margin-top: 45%;
+    height: 20%;
+    width: 40%;
+}
+
+.landing-page-image-2{
+    height: 100%;
+    width: 30%;
+/*    background: darkslategray;*/
+}
+
+.landing-page-image-2 img{
+    margin: 5.5em 0 0 13%;
+    width: 85%;
+    height: 110%;
+    position: relative;
+    z-index: 1;
+/*    background: red;*/  
 }
 
 
-/*header ends here...*/
+/*about section starts*/
 
+.about-us{
+    position: relative;
+    z-index: 2;
+    height: 45vh;
+    width: 73%;
+    background: #e4dcf1;
+    box-shadow: 0 5px 5px 0 grey;
+    margin: 5em auto 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.choose-us, .our-offers{
+    width: 42%;
+    height: 65%;
+    margin: 5% 0 0 .5%;
+/*    background: red;*/
+}
+
+.choose-us{
+    position: relative;
+    margin-left: 8%;
+    text-align: left;
+}
 
 .why{
-    margin:0 0 1em 2.8em;
+    font-size: 2.7em;
+/*    color: #3d2352;*/
 }
 
-.to-do{
-    margin:.7em 0 0 6em;
+.what-we-do{
+    margin-top: 1.5em;
+    font-size: 100%;
     line-height: 1.5;
-    color: grey;
-    font-weight: bold
+    color: var(--content-color);
+    font-weight: bold;
 }
 
 .more-benefit{
-    margin: 2em 0 0 6em;
+    margin: 1.3em 0 0 0;
    
 }
 .more-benefit>a{
      text-decoration: none;
     color: orangered;
-}
-
-.icons{
-     margin-left:2em;
-    font-size: 3em;
-    color: #3d2352;
-}
-
-.waiting{
-   height: 5em;
-}
-
-
-.fa-certificate{
-    margin-top: .5em;
-    height: 1em;
-    width: 1em;
-}
-
-.fa-check-square{
-    margin-top: .3em;
-    height: 1.2em;
-    width: 1.2em;
-}
-
-.function{
-    display: flex;
-    flex-direction: column;
-    margin-left: 1em;
-   
-}
-h5{
-    color: grey;
 }
 
 .svg{
@@ -200,51 +428,95 @@ h5{
     color: orangered;
 }
 
-.first-column{
+.offers{
+    width: 100%;
+    height: 31%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.first-offer{
+    margin-top: 0;
+}
+
+.icon-text{
+    margin: 3% 0 0 5%;
+}
+
+.planner, .certified, .verified{
+    height: 80%;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 145%;
+}
+
+h5{
+    color: var(--content-color);
+}
+
+.icon-text h5{
+        margin-top: .5em;
+    }
+
+.icon-1, .icon-2, .icon-3{
+    width: 15%;
+}
+
+/*service starts here*/
+
+.our-services{
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-    margin-top: 2em;
-
+    margin: 3em auto;
+    width: 73%;
+    min-height: 50vh;
+    border-radius: 10px;
 }
 
-.first-pane,
-.second-pane,
-.third-pane,
-.choose-us{
-    width: 73vw;
+.first-service, .second-service,
+.third-service{
+    width: 100%;
     height: 18.2em;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
 }
 
-.first-pane{
-    margin-top: 3em;
-    background: #ffffff;
-
+.first-service, .second-service{
+    margin-top: 3.5em;
 }
 
-.second-pane, .third-pane{
-    margin-top: 2em;
-}
-
-.choose-us{
-    background: #e4dcf1;
-    box-shadow: 0 5px 5px 0 grey;
-    margin-top: 5em;
-    position: relative;
-    align-items: center;
-    height: 20em;
+.third-service{
+    margin-bottom: 3em;
 }
 
 .garage{
     height: 18em;
-    width: 20em;
-    background: url(istockphoto.jpg); background-size: cover;
+    width: 35%;
+    background: url(istockphoto.jpg);
+    background-size: cover;
     background-position: center;
     margin-left: 5em;
 }
+
+.repairs{
+    width: 50%;
+    margin: 2em 0 0;
+    height: 15em;
+}
+
+.repairs-1{
+        width: 50%;
+        margin: 2em 0 0;
+        height: 15em;
+    }
 
 .wrong{
     margin:1em 0 0 4em;
@@ -260,18 +532,28 @@ h5{
     line-height: 1.4;
 }
 
+.more-benefits{
+    margin: 1.3em 0 0 6em;
+}
+
+.more-benefits>a{
+     text-decoration: none;
+    color: orangered;
+    
+}
+
 .problem-fix{
     height: 18em;
-    width: 20em;
+    width: 35%;
     background: url(cars1.jpg);
     background-size: cover;
     background-position: center;
-    margin-left: 7em;
+    margin-left: 3em;
 }
 
 .bye-bye{
     height: 18em;
-    width: 20em;
+    width: 35%;
     background: url(done.png);
     background-size: fixed;
     background-repeat: no-repeat;
@@ -279,15 +561,17 @@ h5{
     margin-left: 5em;
 }
 
-.about{
-    float: left;
+/*report issues*/
+
+.what-to-report{
+/*    float: left;*/
     height: 5.5em;
-    width: 45em;
+    width: 45%;
     background: #e4dcf1;
     font-family: monospace;
     font-weight: bold;
     color: #3d2352;
-    margin: 3.5em 0 0 1em;
+    margin: 3.5em auto 0;
     border-radius: 5px;
 }
 
@@ -297,13 +581,14 @@ h5{
     line-height: 1.5;
 }
 
-/*first column ends here.......*/
-
-/*second column starts here*/
-
-.second-column{
+.who-to-call{
     display: flex;
     flex-direction: row;
+    width: 40%;
+/*    background: red;*/
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
 }
 
 .circle{
@@ -328,7 +613,7 @@ h5{
 }
 
 .footer{
-    width: 100vw;
+    width: 100%;
     height: 35px;
     background: #3d2352;
     margin-top: .7em;
@@ -342,197 +627,167 @@ h5{
 
 .copyright{
     margin-top: .5em;
+    padding: 1em 0 0 0;
 }
-    
-    </style>
-    
-<!--    responsive styling-->
-   
-   <style>
-       /*large laptops and desktops*/
-@media only screen and (max-width: 1199px){
-    
-    body{
-        overflow-x: hidden;
-    }
+       
+       @media only screen and (max-width : 1199px){
     
     .header{
-        border-bottom-right-radius: 20%;
-    }
- 
-    .mechanic{
-        float: right;
-        height: 17em;
-        width: 23em;
-        margin: 6em 0 0 -3em;
+        border-bottom-right-radius: 21%;
     }
     
-    .our-experience{
-        min-width: 30em;
-        margin:.5em 0 0 10em;
-    }
-    
-    .landing-text{
-        margin:1.5em 0 0 4em;
-    }
-    
-    .quote{
-        margin:2em 0 0 9.6em;
-    }
-    
-    .vlc{
-        float: right;
-        height: 7em;
-        margin-top: 18em;
-    }   
-/*    end of header*/
-    
-    .choose-us{
-        min-height: 20em;
-        min-width: 80vw;
-        position: relative;
-        align-items: center;
-    }
-    
-    .icons{
-        margin-left:1em;
-        font-size: 2.5em;
-        height: 5.4em;
-    }
-    
-    .fa-certificate{
-        margin-top: .7em;
-    }
-    
-    .fa-check-square{
-        margin-top: .8em;
-    }
-    
-/*    first column starts*/
-    .first-column{
-        position: relative;
-        align-items: center;
-    }
-    
-    .first-pane, .second-pane,
-    .third-pane{
-        width: 80vw;
-    }
-    
- }
-
-/*normal laptops and desktops*/
-@media only screen and (max-width: 992px){
-    
-    body{
-        overflow-x: hidden;
-    }
-    
-    .header{
-        border-bottom-right-radius: 30%;
-    }
-    
-    .mechengr{
-        height: 33em;
-        width: 15em;
-        margin-right: 0;
-    }
-    
-    .mechanic{
-        margin-left: .1em;
-        height: 300px;
-        width: 320px;
-    }
-    
-    .vlc{
-        margin-top: 12em;
-    }
-    
-    .landing-text{
-        margin-top: 3em;
-        font-size: 2em;
-    }
-    
-    .our-experience{
-        margin-left: 8em;
-    }
-    
-    .our-experience br{
+    .text-container br{
         display: none;
     }
     
-    .right{
-        margin-right: 4em;
-        margin-left: 0;
+/*    about us*/   
+    .what-we-do br{
+        display: none;
     }
     
-    .righty{
-        margin-right: 1em;
+    .what-we-do{
+        font-size: 100%;
     }
     
-    .quote{
-        margin-left: 7.8em;
+    h2{
+        font-size: 135%;
+    }
+    
+    .icon-text h5{
+        margin-top: .1em;
+    }
+    
+/*    service starts here*/
+    .wrong-solution br{
+        display: none;
+    }
+    
+    .wrong br{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width : 992px){
+    
+    .landing-page-image-1 .car{
+        margin-top: 22%;
+    }
+    
+    .landing-page-image-1 .vlc{
+        margin-top: 60%;
+    }
+    
+    li a{
+        font-size: 95%;
+    }
+    
+    .right-float{
+        width: 5.3em;
     }
     
     button{
-        padding: 8px 25px;
+        width: 8em;
+    }
+    
+/*    about us*/
+    
+    .about-us, .our-services{
+        width: 80%;
     }
     
     .why{
-        font-size: 2em;
-        
+        font-size: 2.3em;
+        margin-top: .4em;
     }
     
-    .to-do{
-        font-size: .9em;
-        margin-left: 3em;
+    .what-we-do{
+        line-height: 1.3;
+        font-size: 96%;
     }
     
-    h5{
-        font-size: .7em;
+    .icon{
+        width: 20%;
     }
     
-    .more-benefit{
-        font-size: .9em;
+    .certified{
+        margin-top: 1em;
     }
     
-    .wrong{
-        font-size: 1.8em;
-        margin-left: 2em;
+    .third-offer{
+        margin-top: 1.5em;
     }
     
-    .wrong-solution{
-        font-size: 1em;
-        margin-left: 3em;
+/*    service starts here*/
+    
+/*    service ends here*/
+    
+/*    report issues*/
+    .what-to-report{
+        width: 60%;
     }
     
-    .garage, .problem-fix,
-    .bye-bye{
-        width: 18em;
+    .who-to-call{
+        width: 60%;
     }
     
-    .problem-fix{
-        margin-left: 3em;
-    }
 }
 
-/*Mediun devices(landscape teblets)*/
-@media only screen and (max-width: 769px){
+@media only screen and (max-width : 769px){
     
-    body{
-        overflow-x: hidden;
+    .landing-page-text{
+        width: 60%;
     }
     
-    .header{
-        border-bottom-right-radius: 30%;
-        border-bottom-left-radius: 60%;
+    .text-container{
+        width: 90%;
+        margin:20% 0 0 10%;
     }
     
-    #menubar{
+    .landing-text{
+        font-size: 2.5em;
+    }
+    
+    .landing-page-image-1{
+        width: 1%;
+        height: 1%;
+    }
+    
+    .landing-page-image-1 .car{
+        visibility: hidden;
+    }
+    
+    .landing-page-image-2{
+/*        background: blue;*/
+        width: 39%;
+    }
+    
+    .landing-page-image-2 img{
+        width: 75%;
+        position: absolute;
+        height: 79%;
+        width: 45%;
+/*        background: red;*/
+        left: 42%;
+    }
+    
+    .landing-page-image-1 .vlc{
+    position: absolute;
+        left: 35%;
+        top: 10%;
+        height: 20%;
+        width: 15%;
+    }
+    
+     #menubar{
         cursor: pointer;
         width: 35px;
         height: 30px;
         margin-top: 25px;
+        float: right;
+         margin-right: 3.7%;
+         position: relative;
+         z-index: 2;
     }
     
     .bar{
@@ -569,532 +824,258 @@ h5{
         opacity: 0;
     }
     
-    .change{
-        display: flex;
-        flex-direction: column;    
-    }
-    
-    
     ul{
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
         transition: .3s ease;
         display: none;
         position: absolute;
-        right: -4em;
-        
+        left: 70%;
+        top: 10%;
+        width: 27%;
+        height: 50%;
+        z-index: 3;
+    }
+    
+    .right-float{
+        float: none;
+        width: 0;
+        text-align: left;
+        border: none;
+        border-radius: 0;
+        padding: 10px 10px;
+        background: none;
+        width: 70%;
+        text-align: center;
+    }
+    
+    li{
+        padding: 10px 10px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    li a{
+        transition: .5s ease;
     }
     
     li:hover a{
-        color: orangered;
-        font-weight: bolder;
+        background: orangered;
+        border-radius: 9px;
+        font-weight: bold;
+        padding: 10px 20px;
+/*        color: yellow;*/
     }
     
-    .right, .righty{
-        float: right;
-        margin-right: 0;
-        margin-left: 0;
-        border: none;
-        width: 7em;
+/*    to make the ul show when the hamburger is clicked*/
+    .change{
+        display: flex;
+        flex-direction: column;
     }
     
-    .right{
-        background: none;
-    }
-    
-    .righty{
-        margin-left: 1em;
-    }
-    
-    .burger-bg{
+    .menu-bg{
+         position: absolute;
+        left: 65.9%;
+        border-radius: 500px 0 0 500px;
+        transition: .3s ease;
         height: 0;
         width: 0;
-        left: 60vw;
-        background: #3e3e3e;
-        opacity: .8;
-        transition: .3s ease;
         z-index: 1;
-        border-radius: 50% 0 0 50%;
     }
     
-    #nav, .burger-bg{
-        top: 0;
-        left: 65vw;
-        position: absolute;
+    .change-bg{
+        height: 500px; 
+        width: 250px;
+        background: rgba(0,0,0, .2);
+
     }
     
-    #nav{
-        left: 90vw;
+/*    about*/
+    
+    .about-us, .our-services{
+        width: 90%;
     }
     
-/*     .change-bg{
-        width: 550px;
-        height: 540px;
-    } */
     
-    #nav{
-        z-index: 2;
+/*    service starts here*/
+    
+    .our-services{
+        min-height: 220vh;
+        box-shadow: none;
+/*        background: red;*/
     }
     
-    .mechanic{
-        height: 10px;
-        width: 10px;
-        visibility: hidden;
+    .first-service, .second-service,
+    .third-service{
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        width: 100%;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
     }
     
-    .mechengr{
-        margin-top: 9em;
-        height: 35em;
-        width: 20em;
-    }
-    
-    .our-experience{
+    .third-service{
         margin-top: 2em;
     }
     
-    button{
-        margin-top: 3em;
+    .garage, .repairs,
+    .repairs-1, .problem-fix,
+    .bye-bye{
+        width: 70%;
+        margin: 0;
     }
     
-    .vlc{
-        margin: 17em 0 0 -20em;
+    .garage,
+    .bye-bye{
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60%;
+        width: 60%;
+        margin: 0 auto;
     }
     
-    .landing-text{
-        margin-top: 4em;
+    .problem-fix{
+        height: 60%;
+        width: 60%;
+        margin: 0 auto;
     }
     
-    .choose-us{
-        width: 90vw;
-        height: 5em;
-    }
-    
-    .function{
-        position: relative;
-        align-items: center;
-        width: 14em;
-    }
-    
-    .to-do{
-        font-size: .8em;
-    }
-    
-    .first-column{
-        width: 90vw;
-    }
-    
-/*     .first-pane, .second-pane,
-    .third-pane{
-        min-height: 29em;
-        width: 70vw;
-        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.15); */
-    
-    .second-pane, .third-pane{
-        margin-top: 3em;
+    .wrong, .wrong-solution,
+    .more-benefits{
+        margin:0 0 0 0;
+        text-align: center;
     }
     
     .wrong{
-        font-size: 1.5em;
+        margin-top: 2em;
     }
     
     .wrong-solution{
-        font-size: .8em;
-        margin-top: 1em;
-    }    
-    
-    .garage, .bye-bye{
-        margin-left: 1.5em;
+        margin-top: 1.2em;
     }
     
-    .repairs{
-        width: 25em;
-        margin: 2em 0 0 2em;
-        height: 15em;
+    .more-benefits{
+        margin: 1.2em 0 3em 0;
     }
     
-    .repairs-1{
-        width: 25em;
-        margin: 2em 0 0;
-        height: 15em;
-    }
-    
-    .about{
-        width: 20em;
-    }
-    
-    .aboutengr{
-        font-size: 1em;
-    }
-    
-}
-
-/*small devices(portrait tablet and large phone*/
-@media only screen and (max-width: 600px){
-    
-    body{
-        overflow-x: hidden;
-    }
-    
-    #menubar{
-        position: absolute;
-        right: -1em;
-    }
-    
-    .landing-text br{
-        display: none;
-    }
-    
-    .burger-bg{
-        left: 55vw;
-    }
-    
-    .mechengr{
-        height: 33em;
-        width: 18em;
-        position: relative;
-    }
-    
-    .vlc{
-        margin: 13em 0 0 -6em;
-        height: 6em;
-    }
-    
-    button{
-        padding: 8px 12px;
-        font-size: .8em;
-    }
-    
-    ul{
-        margin-top: 6em;
-        margin-right: -1.5em;
-    }
-    
-    .needs{
-        width: 50%;
-    }
-    
-    .why{
-        width: 8em;
-        font-size: 1.5em;
-    }
-    
-    .to-do{
-        width: 20em;
-        font-size: .7em;
-        text-align: center;
-    }
-    
-    .burger-bg{
-        margin-top: -1em;
-    }
-    
-    .to-do br{
-        display: none;
-    }
-    
-    .icons{
-        margin-left:.3em;
-        font-size: 2em;
-        height: 8em;
-    }
-    
-    .planner{
-        margin-top: 1.1em;
-    }
-    
-    .fa-certificate{
-        margin-top: 1em;
-    }
-    
-    .fa-check-square{
-        margin-top: 1em;
-    }
-    
-    .more-benefit{
-        font-size: .7em;
-        margin-left: 3.1em;
-    }
-    
-    h4{
-        font-size:.8em;
-    }
-    
-    h5{
-        font-size: .6em;
-    }
-    
-    .function{
-        margin-top: 5em;
-    }
-    
-    .first-pane, .second-pane,
-    .third-pane{
-        display: flex;
-        flex-direction: column;
-        height: 29em;
-        width: 70vw;
-        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.15);
-    }
-    
-    .third-pane{
-        margin-bottom: 2em;
-    }
-    
-    .repairs-1, .repairs{
-        margin:2em auto;
-        width: 80%;   
-    }
-    
-    .garage, .bye-bye,
-    .problem-fix{
+    .repairs, .repairs-1{
         margin: auto;
     }
     
-    .garage{
-        margin-top: 1em;
-    }
+/*    report issues*/
     
-    .aboutengr{
-        font-size: 1.2em;
-    }
+    .what-to-report{
+        width: 75%;
+    } 
     
+    .who-to-call{
+        width: 75%;
+    }  
     
 }
 
-/*extra small devices*/
-@media only screen and (max-width: 500px){
-    
-    body{
-        overflow-x: hidden;
-    }
-    
-    .header{
-        border-bottom-right-radius: 20%;
-        border-bottom-left-radius: 50%;
-    }
-    
-    .quote{
-        margin-left: 3.5em;
-    }
-    
-    .mechengr{
-        margin-top: 9em;
-        height: 33em;
-        width: 15.2em;
-    }
-    
-    #menubar{
-        position: relative;
-        right: 1em;
-    }
-    
-    ul{
-        position: absolute;
-        right: -1.5em;
-        margin-top: 3.9em;
-    }
-    
-    .burger-bg{
-        top: -1em;
-        left: 55vw;
-    }
+@media only screen and (max-width : 600px){
     
     .landing-text{
-        margin-left: 1.7em;
-        position: absolute;
+        font-size: 1.9em;
     }
     
-    .landing-text br{
-        display: block
-    }
-    
-    .our-experience{
-        margin-top: 15em;
-        margin-left: 3.2em;
-    }
-    
-    .our-experience br{
-        display: block;
-    }
-    
-    .vlc{
-        position: absolute;
-        top: 21em;
-    }
-    
-    .needs{
-       width: 50%; 
-    }
-    
-    .to-do{
-        width: 17em;
-        font-size: .7em;
-        text-align: justify-all;
-    }
-    
-    .repairs-1, .repairs{
-        margin:2em auto;
+    .landing-page-text{
         width: 80%;
     }
     
-    .repairs br, .repairs-1 br{
-        display: none;
+    .landing-page-image-2 img{
+        position: absolute;
+        height: 90%;
+        width: 43%;
+        left: 43%;
+/*        background: red;*/
     }
     
-    .aboutengr{
+    .landing-page-image-1 .vlc{
+        position: absolute;
+        top: 23%;
+    }
+    
+    li:hover a{
+        background: orangered;
+        border-radius: 9px;
+        font-weight: bold;
+        padding: 8px 6px;
+/*        color: yellow;*/
+    }
+    
+/*    about*/
+    
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        min-height: 65vh;
+    }
+    
+      .choose-us{
+/*        background: red;*/
+          margin:2em auto;
+          width: 80%;
+          text-align: center;
+    }
+    
+    .our-offers{
+        margin: 0 auto;
+        width: 85%;
         text-align: center;
+/*        background: RED;*/
     }
     
-    .circle{
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        margin-top: 3em;
+    .offers{
+/*        background: yellow;*/
+        width: 90%;
+        margin: .2em auto;
     }
     
+    .icon{
+        height: 3em;
+        width: 3em;
+    }
     
+/*    service starts here*/
+    
+    .our-services{
+        min-height: 250vh;
+    
+    }
+/*    service ends here*/
+    
+/*    report issues*/
+    .what-to-report{
+        width: 80%;
+    }
+    
+    .who-to-call{
+        width: 80%;
+    }  
+
 }
+
+    
+    
     
     
     </style>
     
-</head>
-
-<body>
-   
-    <div class="header">
-       <div class="nav-bar" id="nav">
-           
-           <!--      hamburger-->
-          <div id="menubar" onclick="toggleSidebar()">
-             <div id="bar1" class="bar"></div>
-             <div id="bar2" class="bar"></div>
-             <div id="bar3" class="bar"></div>
-          </div>
-         
-
-<!--           nav bar-->
-            <ul class="navigation" id="navigation">
-            <li class=""><a href="#" style="font-weight: bold">Home</a></li>
-            <li class=""><a href="#">Contact</a></li>
-            <li class=""><a href="#">Our Services</a></li>
-            <li class=""><a href="#">Review</a></li>
-            <li class="right"><a href="#">Login</a></li>
-            <li class="righty"><a href="#">Sign Up</a></li>
-        </ul>
-       </div>
-       <!--         hamburger background-->
-        <div class="burger-bg" id="burger-bg"></div>
-      
-       <img class="mechengr" src="mech.png" alt="#">
-       <img class="mechanic" src="realcar.png" alt="#">
-       
-          <h1 class="landing-text">
-           The Auto Mechanic <br>that is a step away...
-       </h1>
-       
-       
-<!--        <div class="main-experience">
-       <p class="our-experience">
-           We have experienced mechanics and know how to fix any  <br>thing that is wrong with your car. We have the equipment <br> to troubleshoot the problem whatever it may be.
-       </p>
-           
-           
-       </div>
-       
-       
-       <button class="quote"><a href="#">Get a Quote</a></button>
-       <button class="learn"><a href="#">Learn More.</a></button> -->
-       <img class="vlc" src="player-icon.png" alt="">
-    </div>
     
-    <div class="choose-us">
-          
-          
-          <div class="needs" style="margin-top: 1em;"><h1 class="why">Why Choose Us?</h1><p class="to-do">Just tell us what maintenance and auto repair services<br> you need and we'll send you a fixed quote. One of our <br> mobile mechanics will come out, do a diagnostic visit <br> and create a quote for you.</p> 
-          <p class="more-benefit"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>
-          
-          
-          <div class="icons" style="margin-top: .5em;">
-              
-               <img class="planner" style="height: 1em; width: 1em" src="planner.png" alt="">
-             <br>
-             <img  class="fa-certificate" src="id.png" alt="">
-              <br>
-               <img  class="fa-check-square" src="verified.png" alt="">
-          </div>
-          
-          <div class='function' style="margin-top: 1em;">
-              <div class="waiting"><h4 style="">No More Waiting Rooms</h4><h5 style="margin-top: .6em;">finally, auto repair that works around your schedule</h5></div>
-              
-              <div style="margin-top: .1em;"><h4>Full-Time Certified Mechanics</h4><h5 style="margin-top: .6em;">Professional and trusted mechanics that come to you.</h5></div>
-              
-              <div style="margin-top: 2.5em;"><h4>We Stand By Our Work</h4><h5 style="margin-top: .6em;">Every service has a year/ 12,000 miles warranty.</h5></div>
-          </div>
-           
-       </div>
-
-    
-    <div class="first-column">
-      
-       <div class="first-pane">
-         <div class="garage"></div>
-         <div class="repairs frepairs"><h1 class="wrong">Choose Your Car Repairs, <br> & Tell Us What's Wrong</h1>
-         <p class="wrong-solution">Our mechanics will get your car back on the road <br>before you know it. No need to waste time sending <br>them to the repair shop anymore!</p>  <p class="more-benefit"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>  
-       </div>
-       
-       <div class="second-pane">
-           <div class="repairs-1"><h1 class="wrong">Sit Back, Relax, We Come <br>Right To Your Location</h1>
-         <p class="wrong-solution">Select your car. Tell us what's wrong, and we'll give<br>free, instant, price with a complete breakdown of <br>parts and labour.</p>  <p class="more-benefit"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>
-           <div class="problem-fix"></div>
-       </div>
-       
-       <div class="third-pane">
-           <div class="bye-bye"></div>
-         <div class="repairs trepairs"><h1 class="wrong">We Offer Fair &<br>Transparent Pricing</h1>
-         <p class="wrong-solution">We offer fair and transparent pricing and provide<br>estimates upfront for hundred of services on<br>thousand of cars. Book with confidence.</p>  <p class="more-benefit"><a href="#">Learn more about our benefit <img class="svg" src="arrow-right.svg" alt=""></a></p></div>  
-       </div>
-       
-        
-    </div>
-    
-    
-   
-       <div class="about">
-          <p class="aboutengr">
-          Have a problem to report? <br> Or Issues with our Technicians and Mechanics?
-          
-       </div>
-       
-         
-    <div class="second-column">
-        <div class="circle"></div>
-        <div class="circle-number">Call <strong>:</strong> <br>General Manager, Auto Mechanic. <br><a style="text-decoration: none; color: #3d2352 ;" href="#">+2349021284572<i class="fas fa-phone-square-alt"></i></a></div>
-    </div>
-    
-    
-    
-    <div class="footer">
-       <p class="copyright">Copyright <i  style="font-size: .7em;"class="far fa-copyright"></i>2020. All Right Reserved.
-       </p>
-    </div>
-    
-    
-    
-
-    
-    <script>
+   <script>
         
         function toggleSidebar(){
             document.getElementById("menubar").classList.toggle("change");
-            document.getElementById('navigation').classList.toggle('change');
-            document.getElementById('burger-bg').classList.toggle('change-bg');
+            document.getElementById('nav').classList.toggle('change');
+            document.getElementById('menu-bg').classList.toggle('change-bg');
         }
-
-
-let firstPaneTl = gsap.timeline({scrollTrigger: {
-    trigger: ".first-pane",
+       
+       
+       let firstPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".first-service",
     start: "top center",
     toggleActions: "play none none none"
 }});
@@ -1111,7 +1092,7 @@ let firstPaneTl = gsap.timeline({scrollTrigger: {
     }, "<");
 
 let secondPaneTl = gsap.timeline({scrollTrigger: {
-    trigger: ".second-pane",
+    trigger: ".second-service",
     start: "top center",
     toggleActions: "play none none none"
 }});
@@ -1128,7 +1109,7 @@ let secondPaneTl = gsap.timeline({scrollTrigger: {
     }, "<");
 
 let thirdPaneTl = gsap.timeline({scrollTrigger: {
-    trigger: ".third-pane",
+    trigger: ".third-service",
     start: "top center",
     toggleActions: "play none none none"
 }});
@@ -1144,14 +1125,10 @@ let thirdPaneTl = gsap.timeline({scrollTrigger: {
         xPercent: 100
     }, "<");
 
+
+       </script>
+     
+      
         
-    </script>
 </body>
 </html>
-
-  
-
-
-
-
-
