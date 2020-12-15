@@ -954,19 +954,26 @@ h5{
         overflow-x: hidden;
     }
     
-/*
     .menu-bg{
+        position: absolute;
         top: -1em;
+        left: 60%;
+        height: 0;
+        width: 0;
+    }
+    
+    .change-bg{
+        height: 500px; 
+        width: 250px;
+        background: rgba(0,0,0, .2);
+    }
+    
+    ul{
         left: 60%;
     }
     
-*/
-    ul{
-        left: 65%;
-    }
-    
     li{
-        width: 85%;
+        width: 80%;
     }
     
     
@@ -1015,8 +1022,8 @@ h5{
               <li class="right-float"><a href="#" >Sign Up</a></li>
           </ul>
           
-<!--           <div class="menu-bg" id="menu-bg">
-          </div> -->
+          <div class="menu-bg" id="menu-bg">
+          </div>
       </div>
       
 <!--      header contents-->
