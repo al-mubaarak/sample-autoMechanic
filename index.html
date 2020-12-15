@@ -950,7 +950,7 @@ h5{
        
 @media only screen and (max-width : 550px){
            
-    body{
+/*     body{
         overflow-x: hidden;
     }
     
@@ -966,7 +966,7 @@ h5{
         height: 500px; 
         width: 250px;
         background: rgba(0,0,0, .2);
-    }
+    } */
     
     ul{
         left: 60%;
@@ -1022,8 +1022,8 @@ h5{
               <li class="right-float"><a href="#" >Sign Up</a></li>
           </ul>
           
-          <div class="menu-bg" id="menu-bg">
-          </div>
+<!--           <div class="menu-bg" id="menu-bg">
+          </div> -->
       </div>
       
 <!--      header contents-->
@@ -1180,56 +1180,56 @@ h5{
         }
        
        
-//        let firstPaneTl = gsap.timeline({scrollTrigger: {
-//     trigger: ".first-service",
-//     start: "top center",
-//     toggleActions: "play none none none"
-// }});
+       let firstPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".first-service",
+    start: "top center",
+    toggleActions: "play none none none"
+}});
 
-//     firstPaneTl.from(".garage", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: -100
-//     });
-//     firstPaneTl.from(".frepairs", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: 100
-//     }, "<");
+    firstPaneTl.from(".garage", {
+        opacity: 0,
+        duration: 1,
+        xPercent: -100
+    });
+    firstPaneTl.from(".frepairs", {
+        opacity: 0,
+        duration: 1,
+        xPercent: 100
+    }, "<");
 
-// let secondPaneTl = gsap.timeline({scrollTrigger: {
-//     trigger: ".second-service",
-//     start: "top center",
-//     toggleActions: "play none none none"
-// }});
+let secondPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".second-service",
+    start: "top center",
+    toggleActions: "play none none none"
+}});
 
-//     secondPaneTl.from(".repairs-1", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: -100
-//     });
-//     secondPaneTl.from(".problem-fix", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: 100
-//     }, "<");
+    secondPaneTl.from(".repairs-1", {
+        opacity: 0,
+        duration: 1,
+        xPercent: -100
+    });
+    secondPaneTl.from(".problem-fix", {
+        opacity: 0,
+        duration: 1,
+        xPercent: 100
+    }, "<");
 
-// let thirdPaneTl = gsap.timeline({scrollTrigger: {
-//     trigger: ".third-service",
-//     start: "top center",
-//     toggleActions: "play none none none"
-// }});
+let thirdPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".third-service",
+    start: "top center",
+    toggleActions: "play none none none"
+}});
 
-//     thirdPaneTl.from(".bye-bye", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: -100
-//     });
-//     thirdPaneTl.from(".trepairs", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: 100
-//     }, "<");
+    thirdPaneTl.from(".bye-bye", {
+        opacity: 0,
+        duration: 1,
+        xPercent: -100
+    });
+    thirdPaneTl.from(".trepairs", {
+        opacity: 0,
+        duration: 1,
+        xPercent: 100
+    }, "<");
 
 
        </script>
