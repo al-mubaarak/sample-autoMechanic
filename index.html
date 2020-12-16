@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>AutoRebrand</title>
+    <title>Auto Mechanic</title>
     
 <!--    cascading style sheet-->
 <link rel="stylesheet" href="auto-rebrand.css">
@@ -954,8 +954,14 @@ h5{
         overflow-x: hidden;
     }
     
+    .header{
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 25%;
+        height: 85vh;
+    }
+    
     .landing-page{
-        height: 100vh;
+        height: 75vh;
         width: 100%;
     }
     
@@ -1014,7 +1020,7 @@ h5{
     }
     
     li{
-        width: 100%;
+        width: 110%;
         
     }
     
@@ -1259,47 +1265,47 @@ h5{
     firstPaneTl.from(".garage", {
         opacity: 0,
         duration: 1,
-        xPercent: -12
+        xPercent: -11
     });
     firstPaneTl.from(".frepairs", {
         opacity: 0,
         duration: 1,
-        xPercent: 12
+        xPercent: 11
     }, "<");
 
-// let secondPaneTl = gsap.timeline({scrollTrigger: {
-//     trigger: ".second-service",
-//     start: "top center",
-//     toggleActions: "play none none none"
-// }});
+let secondPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".second-service",
+    start: "top center",
+    toggleActions: "play none none none"
+}});
 
-//     secondPaneTl.from(".repairs-1", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: -100
-//     });
-//     secondPaneTl.from(".problem-fix", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: 100
-//     }, "<");
+    secondPaneTl.from(".repairs-1", {
+        opacity: 0,
+        duration: 1,
+        xPercent: -11
+    });
+    secondPaneTl.from(".problem-fix", {
+        opacity: 0,
+        duration: 1,
+        xPercent: 11
+    }, "<");
 
-// let thirdPaneTl = gsap.timeline({scrollTrigger: {
-//     trigger: ".third-service",
-//     start: "top center",
-//     toggleActions: "play none none none"
-// }});
+let thirdPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".third-service",
+    start: "top center",
+    toggleActions: "play none none none"
+}});
 
-//     thirdPaneTl.from(".bye-bye", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: -100
-//     });
-//     thirdPaneTl.from(".trepairs", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: 100
-//     }, "<");
+    thirdPaneTl.from(".bye-bye", {
+        opacity: 0,
+        duration: 1,
+        xPercent: -11
+    });
+    thirdPaneTl.from(".trepairs", {
+        opacity: 0,
+        duration: 1,
+        xPercent: 11
+    }, "<");
 
 
        </script>
