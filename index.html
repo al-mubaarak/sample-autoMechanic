@@ -996,7 +996,7 @@ h5{
     .change-bg{
         height: 440px;
         width: 220px;
-        background: rgba(0,0,0, .4);
+        background: rgba(0,0,0);
         
     }
     
@@ -1220,22 +1220,22 @@ h5{
         }
        
        
-//        let firstPaneTl = gsap.timeline({scrollTrigger: {
-//     trigger: ".first-service",
-//     start: "top center",
-//     toggleActions: "play none none none"
-// }});
+       let firstPaneTl = gsap.timeline({scrollTrigger: {
+    trigger: ".first-service",
+    start: "top center",
+    toggleActions: "play none none none"
+}});
 
-//     firstPaneTl.from(".garage", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: -100
-//     });
-//     firstPaneTl.from(".frepairs", {
-//         opacity: 0,
-//         duration: 1,
-//         xPercent: 100
-//     }, "<");
+    firstPaneTl.from(".garage", {
+        opacity: 0,
+        duration: 1,
+        xPercent: -10
+    });
+    firstPaneTl.from(".frepairs", {
+        opacity: 0,
+        duration: 1,
+        xPercent: 10
+    }, "<");
 
 // let secondPaneTl = gsap.timeline({scrollTrigger: {
 //     trigger: ".second-service",
