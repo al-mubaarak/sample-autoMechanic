@@ -950,30 +950,44 @@ h5{
        
 @media only screen and (max-width : 550px){
            
-/*     body{
+    body{
         overflow-x: hidden;
     }
     
     .menu-bg{
         position: absolute;
-        top: -1em;
+/*         top: -1em;
         left: 60%;
         height: 0;
-        width: 0;
+        width: 0; */
     }
     
-    .change-bg{
+/*     .change-bg{
         height: 500px; 
         width: 250px;
         background: rgba(0,0,0, .2);
     } */
     
+    .menu-bg{
+        left: 0;
+        border-radius: 500px 0 0 500px;
+        left: 48%;
+    }
+    
+    .change-bg{
+        height: 500px;
+        width: 250px;
+        
+    }
+    
     ul{
         left: 60%;
+        justify-content: center;
+        align-items: center;
     }
     
     li{
-        width: 80%;
+        width: 100%;
     }
     
     
@@ -1004,7 +1018,6 @@ h5{
 <!--       navigation bar-->
       <div class="navigation ">
          
-<!--         <div class="nav-bar" id="nav">-->
            
            <!--      hamburger-->
           <div id="menubar" onclick="toggleSidebar()">
