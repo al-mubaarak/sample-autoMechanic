@@ -996,7 +996,7 @@ h5{
     .change-bg{
         height: 440px;
         width: 220px;
-        background: rgba(0,0,0);
+        background: #1c1b22;
         
     }
     
@@ -1015,6 +1015,30 @@ h5{
     
     li{
         width: 100%;
+        font-family: monospace;
+    }
+    
+    h5{
+        text-align: left;
+    }
+    
+    .about-us{
+        background: none;
+        box-shadow: none;
+    }
+    
+    .choose-us{
+        background: #e4dcf1;
+        box-shadow: 0 5px 5px 0 grey;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .our-offers{
+        background: #e4dcf1;
+        box-shadow: 0 5px 5px 0 grey;
+        width: 100%;
+        border-radius: 10px;
     }
     
     
@@ -1229,12 +1253,12 @@ h5{
     firstPaneTl.from(".garage", {
         opacity: 0,
         duration: 1,
-        xPercent: -10
+        xPercent: -20
     });
     firstPaneTl.from(".frepairs", {
         opacity: 0,
         duration: 1,
-        xPercent: 10
+        xPercent: 20
     }, "<");
 
 // let secondPaneTl = gsap.timeline({scrollTrigger: {
